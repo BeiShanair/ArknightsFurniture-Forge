@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arknights_furniture:item/lee-s_detective_agency_logo"
+  }
+}

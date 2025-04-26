@@ -1,5 +1,7 @@
 package com.besson.arknights;
 
+import com.besson.arknights.item.ModItemGroups;
+import com.besson.arknights.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +34,9 @@ public class ArknightsFurniture
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModItemGroups.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
