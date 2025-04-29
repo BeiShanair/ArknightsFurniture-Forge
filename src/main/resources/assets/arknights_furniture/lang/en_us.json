@@ -47,5 +47,33 @@
   "item.arknights_furniture.ursus_student_self-governing_group_logo": "Ursus Student Self-Governing Group Logo",
   "item.arknights_furniture.victoria_logo": "Victoria Logo",
   "item.arknights_furniture.yan_logo": "Yan Logo",
-  "itemGroup.logo": "Logo"
+
+  "block.arknights_furniture.warehouse.air_mattress": "Air Mattress",
+  "block.arknights_furniture.warehouse.attendance_board": "Attendance Board",
+  "block.arknights_furniture.warehouse.cargo_trolley": "Cargo Trolley",
+  "block.arknights_furniture.warehouse.carton": "Carton",
+  "block.arknights_furniture.warehouse.carton_stool": "Carton Stool",
+  "block.arknights_furniture.warehouse.ceiling_row_light": "Ceiling Row Light",
+  "block.arknights_furniture.warehouse.concrete_wall": "Concrete Wall",
+  "block.arknights_furniture.warehouse.dormitory_door_frames": "Dormitory Door Frames",
+  "block.arknights_furniture.warehouse.graffiti": "Graffiti",
+  "block.arknights_furniture.warehouse.large_shelf1": "Large Shelf",
+  "block.arknights_furniture.warehouse.large_shelf2": "Large Shelf 2",
+  "block.arknights_furniture.warehouse.large_shelf3": "Large Shelf 3",
+  "block.arknights_furniture.warehouse.large_shelf4": "Large Shelf 4",
+  "block.arknights_furniture.warehouse.large_shelf_empty": "Large Shelf Empty",
+  "block.arknights_furniture.warehouse.pallet": "Pallet",
+  "block.arknights_furniture.warehouse.pile_of_cartons": "Pile Of Cartons",
+  "block.arknights_furniture.warehouse.portable_calculator": "Portable Calculator",
+  "block.arknights_furniture.warehouse.post_it_note": "Post It Note",
+  "block.arknights_furniture.warehouse.reinforced_concrete_walls": "Reinforced Concrete Walls",
+
+  "itemGroup.logo": "Logo",
+  "itemGroup.warehouse": "Warehouse",
+
+  "container.carton": "Carton",
+  "container.large_shelf": "Large Shelf",
+
+  "tooltip.arknights.large_shelf": "It can store up to 9 items.",
+  "tooltip.arknights.large_shelf_empty": "It can store up to 3 items.Stored items can be rendered."
 }

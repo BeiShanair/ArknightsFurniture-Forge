@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "arknights_furniture:block/warehouse/dormitory_door_frames",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "arknights_furniture:block/warehouse/dormitory_door_frames"
+    },
+    "facing=south": {
+      "model": "arknights_furniture:block/warehouse/dormitory_door_frames",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arknights_furniture:block/warehouse/dormitory_door_frames",
+      "y": 270
+    }
+  }
+}

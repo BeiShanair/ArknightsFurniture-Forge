@@ -1,9 +1,13 @@
 package com.besson.arknights;
 
+import com.besson.arknights.block.ModBlockEntities;
+import com.besson.arknights.block.ModBlocks;
 import com.besson.arknights.item.ModItemGroups;
 import com.besson.arknights.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -37,6 +41,8 @@ public class ArknightsFurniture
 
         ModItems.register(modEventBus);
         ModItemGroups.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -62,6 +68,10 @@ public class ArknightsFurniture
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            event.enqueueWork(() ->{
+
+            });
         }
     }
 }
