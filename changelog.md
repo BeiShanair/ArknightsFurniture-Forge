@@ -1,4 +1,9 @@
 # 更新日志/ChangeLog
+
+## 2025-04-30
+- 完成`SeatEntity`类移植，完成座椅类方块的各种基类
+- Complete the port of the `SeatEntity` class, complete the various base classes of the chair block
+
 ## 2025-04-29
 - 更新`货运仓库`家具套组
 - Upgrade of `Warehouse` furniture set

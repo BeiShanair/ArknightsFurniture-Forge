@@ -4,15 +4,18 @@ import com.besson.arknights.block.ModBlockEntities;
 import com.besson.arknights.block.ModBlocks;
 import com.besson.arknights.item.ModItemGroups;
 import com.besson.arknights.item.ModItems;
+import com.besson.arknights.renderer.SeatEntityRenderer;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -43,6 +46,10 @@ public class ArknightsFurniture
         ModItemGroups.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT ,() -> () ->{
+            modEventBus.addListener(ArknightsFurnitureClient::registerRenderer);
+        });
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
