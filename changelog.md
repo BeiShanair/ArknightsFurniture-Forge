@@ -1,4 +1,7 @@
 # 更新日志/ChangeLog
+## 2025-05-20
+- 修复储物类方块存储物丢失问题
+- Fix the storage block storage item loss problem
 
 ## 2025-04-30
 - 完成`SeatEntity`类移植，完成座椅类方块的各种基类

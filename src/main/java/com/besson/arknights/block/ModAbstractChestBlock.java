@@ -74,6 +74,7 @@ public abstract class ModAbstractChestBlock<T extends BlockEntity> extends Abstr
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
             if (blockEntity instanceof Container){
                 Containers.dropContents(pLevel, pPos, (Container) blockEntity);
+                pLevel.updateNeighbourForOutputSignal(pPos, this);
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pMovedByPiston);

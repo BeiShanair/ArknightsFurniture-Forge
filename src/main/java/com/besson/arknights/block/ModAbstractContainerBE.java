@@ -3,6 +3,7 @@ package com.besson.arknights.block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -18,14 +19,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class ModAbstractContainerBE extends RandomizableContainerBlockEntity {
-    private NonNullList<ItemStack> inv = createInventory();
+    protected NonNullList<ItemStack> inv = createInventory();
     protected ModAbstractContainerBE(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState) {
         super(pType, pPos, pBlockState);
     }
 
-    @Override
-    protected AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory) {
-        return ChestMenu.oneRow(pContainerId, pInventory);
+    public NonNullList<ItemStack> createInventory() {
+        return NonNullList.withSize(27, ItemStack.EMPTY);
     }
 
     @Override
@@ -38,11 +38,12 @@ public abstract class ModAbstractContainerBE extends RandomizableContainerBlockE
         this.inv = pItemStacks;
     }
 
-    public NonNullList<ItemStack> createInventory() {
-        return NonNullList.withSize(27, ItemStack.EMPTY);
+    @Override
+    protected AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory) {
+//        return ChestMenu.oneRow(pContainerId, pInventory);
+        return new ChestMenu(MenuType.GENERIC_9x3, pContainerId, pInventory, this, 3);
     }
 
-    @Override
     public int getContainerSize() {
         return 27;
     }
@@ -77,6 +78,7 @@ public abstract class ModAbstractContainerBE extends RandomizableContainerBlockE
     @Override
     public void setChanged() {
         super.setChanged();
+        System.out.println("set change");
         if (this.level != null && !this.level.isClientSide()){
             this.level.sendBlockUpdated(this.worldPosition, this.getBlockState(), this.getBlockState(), 3);
         }

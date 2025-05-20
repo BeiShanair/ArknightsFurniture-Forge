@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,7 +33,7 @@ public class LargeShelfBE extends ModAbstractContainerBE {
 
     @Override
     protected AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory) {
-        return ChestMenu.threeRows(pContainerId, pInventory);
+        return new ChestMenu(MenuType.GENERIC_9x1, pContainerId, pInventory, this, 1);
     }
 
     @Override
