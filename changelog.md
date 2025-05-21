@@ -1,4 +1,8 @@
 # 更新日志/ChangeLog
+## 2025-05-21
+- 完善`ModAbstractContainerBE`类，新增`ContainerOpenersCounter openersCounter`
+- Complete the `ModAbstractContainerBE` class, add `ContainerOpenersCounter openersCounter`
+
 ## 2025-05-20
 - 修复储物类方块存储物丢失问题
 - Fix the storage block storage item loss problem
