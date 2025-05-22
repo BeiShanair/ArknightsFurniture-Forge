@@ -34,9 +34,9 @@ public class ConnectBlock extends FurnitureHorizontalFacingBlock{
         if(left && right){
             return pState.setValue(TYPE, Type.MIDDLE);
         } else if (right) {
-            return pState.setValue(TYPE, Type.LEFT);
-        } else if (left) {
             return pState.setValue(TYPE, Type.RIGHT);
+        } else if (left) {
+            return pState.setValue(TYPE, Type.LEFT);
         } else {
             return pState.setValue(TYPE, Type.SINGLE);
         }

@@ -1,6 +1,9 @@
 package com.besson.arknights.block;
 
 import com.besson.arknights.ArknightsFurniture;
+import com.besson.arknights.block.sideline.CheckerboardBookcaseBE;
+import com.besson.arknights.block.sideline.NightstandBE;
+import com.besson.arknights.block.sideline.SimpleCabinetBE;
 import com.besson.arknights.block.warehouse.CartonBE;
 import com.besson.arknights.block.warehouse.LargeShelfBE;
 import net.minecraft.world.entity.Entity;
@@ -39,6 +42,27 @@ public class ModBlockEntities {
                             ModBlocks.LARGE_SHELF3.get(),
                             ModBlocks.LARGE_SHELF4.get()});
 
+    public static final RegistryObject<BlockEntityType<CheckerboardBookcaseBE>> CHECKERBOARD_BOOKCASE =
+            register("checkerboard_bookcase", CheckerboardBookcaseBE::new,
+                    () -> new Block[]{
+                            ModBlocks.CHECKERBOARD_BOOKCASE_BBL.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_BBR.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_BTL.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_BTR.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_MBL.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_MBR.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_MTL.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_MTR.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_TL.get(),
+                            ModBlocks.CHECKERBOARD_BOOKCASE_TR.get()});
+
+    public static final RegistryObject<BlockEntityType<NightstandBE>> NIGHTSTAND =
+            register("nightstand", NightstandBE::new,
+                    () -> new Block[]{ModBlocks.BLACK_NIGHTSTAND.get()});
+
+    public static final RegistryObject<BlockEntityType<SimpleCabinetBE>> SIMPLE_CABINET =
+            register("simple_cabinet", SimpleCabinetBE::new,
+                    () -> new Block[]{ModBlocks.SIMPLE_BLACK_CABINET.get()});
     private static <T extends Entity> RegistryObject<EntityType<T>> register(String name, EntityType.Builder<T> builder)
     {
         return ENTITY_TYPES.register(name, () -> builder.build(name));

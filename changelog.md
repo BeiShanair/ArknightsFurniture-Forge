@@ -1,4 +1,8 @@
 # 更新日志/ChangeLog
+## 2025-05-22
+- 更新`边线/纯色简约家居`家具套组
+- Upgrade of `Side Line/Simple Black-and-White Furniture` furniture set
+
 ## 2025-05-21
 - 完善`ModAbstractContainerBE`类，新增`ContainerOpenersCounter openersCounter`
 - Complete the `ModAbstractContainerBE` class, add `ContainerOpenersCounter openersCounter`

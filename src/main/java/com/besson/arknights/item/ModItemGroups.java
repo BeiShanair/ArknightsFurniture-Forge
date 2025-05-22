@@ -86,6 +86,29 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.CONCRETE_WALL.get());
                         pOutput.accept(ModBlocks.DORMITORY_DOOR_FRAMES.get());
                     }).build());
+
+    public static final RegistryObject<CreativeModeTab> SIDE_LINE =
+            ITEM_GROUPS.register("side_line", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.SIMPLE_BLACK_CLOCK.get()))
+                    .title(Component.translatable("itemGroup.side_line"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.GRAYISH_WALL_LIGHT.get());
+                        pOutput.accept(ModBlocks.SIMPLE_BLACK_CLOCK.get());
+                        pOutput.accept(ModBlocks.BLACK_HD_TV.get());
+                        pOutput.accept(ModBlocks.BLACK_NIGHTSTAND.get());
+                        pOutput.accept(ModBlocks.BLACK_BED.get());
+                        pOutput.accept(ModBlocks.SMALL_CALLBOARD.get());
+                        pOutput.accept(ModBlocks.BLACK_AND_WHITE_SQUARE_TABLE.get());
+                        pOutput.accept(ModBlocks.LOW_BLACK_AND_WHITE_SOFA.get());
+                        pOutput.accept(ModBlocks.CHECKERBOARD_BOOKCASE_BBL.get());
+                        pOutput.accept(ModBlocks.BLACK_OFFICE_CHAIR.get());
+                        pOutput.accept(ModBlocks.SIMPLE_BLACK_CABINET.get());
+                        pOutput.accept(ModBlocks.SIMPLE_BLACK_DESK_LBL.get());
+                        pOutput.accept(ModBlocks.GRAY_FIBER_CARPET.get());
+                        pOutput.accept(ModBlocks.GRAYISH_WALL_BBL.get());
+                        pOutput.accept(ModBlocks.GRAYISH_WALL_TBL.get());
+                        pOutput.accept(ModBlocks.SMALL_CEILING_LIGHT.get());
+                    }).build());
     public static void register(IEventBus iEventBus){
         ITEM_GROUPS.register(iEventBus);
     }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "arknights_furniture:block/sideline/gray_fiber_carpet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "arknights_furniture:block/sideline/gray_fiber_carpet"
+    },
+    "facing=south": {
+      "model": "arknights_furniture:block/sideline/gray_fiber_carpet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arknights_furniture:block/sideline/gray_fiber_carpet",
+      "y": 270
+    }
+  }
+}

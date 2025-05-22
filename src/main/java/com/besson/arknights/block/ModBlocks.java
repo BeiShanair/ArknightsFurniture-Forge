@@ -1,6 +1,7 @@
 package com.besson.arknights.block;
 
 import com.besson.arknights.ArknightsFurniture;
+import com.besson.arknights.block.sideline.*;
 import com.besson.arknights.block.warehouse.*;
 import com.besson.arknights.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -37,6 +38,44 @@ public class ModBlocks {
     public static final RegistryObject<Block> CONCRETE_WALL = registerBlocks("warehouse/concrete_wall", () -> new ConcreteWall(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
     public static final RegistryObject<Block> DORMITORY_DOOR_FRAMES = registerBlocks("warehouse/dormitory_door_frames", () -> new DormitoryDoorFrames(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
 
+    public static final RegistryObject<Block> GRAYISH_WALL_LIGHT = registerBlocks("sideline/grayish_wall_light",() -> new WallLight(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_CLOCK = registerBlocks("sideline/simple_black_clock",() -> new SimpleClock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> BLACK_HD_TV = registerBlocks("sideline/black_hd_tv",() -> new HDTV(Block.Properties.of().strength(0.2f, 0.1f)));
+    public static final RegistryObject<Block> BLACK_NIGHTSTAND = registerBlocks("sideline/black_nightstand",() -> new Nightstand(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f), ModBlockEntities.NIGHTSTAND::get));
+    public static final RegistryObject<Block> BLACK_BED = registerBlocks("sideline/black_bed",() -> new FurnitureBedBlock(DyeColor.BLACK, Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> SMALL_CALLBOARD = registerBlocks("sideline/small_callboard",() -> new SmallCallboard(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> BLACK_AND_WHITE_SQUARE_TABLE = registerBlocks("sideline/black_and_white_square_table",() -> new SquareTable(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> LOW_BLACK_AND_WHITE_SOFA = registerBlocks("sideline/low_black_and_white_sofa",() -> new LowSofa(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_BBL = registerBlocks("sideline/checkerboard_bookcase_bbl",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_BBR = registerBlocks("sideline/checkerboard_bookcase_bbr",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_BTL = registerBlocks("sideline/checkerboard_bookcase_btl",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_BTR = registerBlocks("sideline/checkerboard_bookcase_btr",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_MBL = registerBlocks("sideline/checkerboard_bookcase_mbl",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_MBR = registerBlocks("sideline/checkerboard_bookcase_mbr",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_MTL = registerBlocks("sideline/checkerboard_bookcase_mtl",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_MTR = registerBlocks("sideline/checkerboard_bookcase_mtr",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_TL = registerBlocks("sideline/checkerboard_bookcase_tl",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> CHECKERBOARD_BOOKCASE_TR = registerBlocks("sideline/checkerboard_bookcase_tr",() -> new CheckerboardBookcase(Block.Properties.of().strength(0.2f, 0.2f), ModBlockEntities.CHECKERBOARD_BOOKCASE::get));
+    public static final RegistryObject<Block> GRAY_FIBER_CARPET = registerBlocks("sideline/gray_fiber_carpet",() -> new FiberCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_BBL = registerBlocks("sideline/grayish_wall_bbl",() -> new GrayishWallBottom(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_BBR = registerBlocks("sideline/grayish_wall_bbr",() -> new GrayishWallBottom(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_BTL = registerBlocks("sideline/grayish_wall_btl",() -> new GrayishWallBottom(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_BTR = registerBlocks("sideline/grayish_wall_btr",() -> new GrayishWallBottom(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_TBL = registerBlocks("sideline/grayish_wall_tbl",() -> new GrayishWallTop(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_TBR = registerBlocks("sideline/grayish_wall_tbr",() -> new GrayishWallTop(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_TTL = registerBlocks("sideline/grayish_wall_ttl",() -> new GrayishWallTop(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> GRAYISH_WALL_TTR = registerBlocks("sideline/grayish_wall_ttr",() -> new GrayishWallTop(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> SMALL_CEILING_LIGHT = registerBlocks("sideline/small_ceiling_light",() -> new CeilingLight(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_CABINET = registerBlocks("sideline/simple_black_cabinet",() -> new SimpleCabinet(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion(), ModBlockEntities.SIMPLE_CABINET::get));
+    public static final RegistryObject<Block> BLACK_OFFICE_CHAIR = registerBlocks("sideline/black_office_chair",() -> new OfficeChair(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_LBL = registerBlocks("sideline/simple_black_desk_lbl",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_LBR = registerBlocks("sideline/simple_black_desk_lbr",() -> new BlackSimpleDeskMiddle(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_LTL = registerBlocks("sideline/simple_black_desk_ltl",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_LTR = registerBlocks("sideline/simple_black_desk_ltr",() -> new BlackSimpleDeskMiddle(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RBL = registerBlocks("sideline/simple_black_desk_rbl",() -> new BlackSimpleDeskMiddle(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RBR = registerBlocks("sideline/simple_black_desk_rbr",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RTL = registerBlocks("sideline/simple_black_desk_rtl",() -> new BlackSimpleDeskMiddle(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RTR = registerBlocks("sideline/simple_black_desk_rtr",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
     private static <T extends Block>RegistryObject<T> registerBlocks(String id, Supplier<T> block){
         RegistryObject<T> blocks = BLOCKS.register(id, block);
         registerBlockItem(id, blocks);
