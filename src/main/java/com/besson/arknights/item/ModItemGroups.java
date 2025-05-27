@@ -109,6 +109,35 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.GRAYISH_WALL_TBL.get());
                         pOutput.accept(ModBlocks.SMALL_CEILING_LIGHT.get());
                     }).build());
+
+    public static final RegistryObject<CreativeModeTab> COLUMBIAN_CAFE =
+            ITEM_GROUPS.register("columbian_cafe", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.BOLIVARIAN_COFFEE_BEAN.get()))
+                    .title(Component.translatable("itemGroup.columbian_cafe"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.BAR_CEILING.get());
+                        pOutput.accept(ModBlocks.BARSTOOL_WITH_CURVED_LEGS.get());
+                        pOutput.accept(ModBlocks.BEVERAGE_CABINET_COFFEE.get());
+                        pOutput.accept(ModBlocks.BEVERAGE_CABINET_EMPTY.get());
+                        pOutput.accept(ModBlocks.BEVERAGE_MENU.get());
+                        pOutput.accept(ModBlocks.BOLIVARIAN_COFFEE_BEAN.get());
+                        pOutput.accept(ModBlocks.BRICK_PATTERN_WALLPAPER.get());
+                        pOutput.accept(ModBlocks.BRICK_PATTERN_WALLPAPER_FLOOR.get());
+                        pOutput.accept(ModBlocks.BROWN_BOOKCASE_LB.get());
+                        pOutput.accept(ModBlocks.COFFEE_BEAN_CAN.get());
+                        pOutput.accept(ModBlocks.COFFEE_BEAN_DISPLAY.get());
+                        pOutput.accept(ModBlocks.COFFEE_MENU.get());
+                        pOutput.accept(ModBlocks.COLUMBIAN_STREET_VIEW_PHOTO.get());
+                        pOutput.accept(ModBlocks.DINING_CHAIR.get());
+                        pOutput.accept(ModBlocks.PEDESTAL_COFFEE_TABLE.get());
+                        pOutput.accept(ModBlocks.PENDANT_LIGHT.get());
+                        pOutput.accept(ModBlocks.POTTED_LONG_LEAF_PLANT.get());
+                        pOutput.accept(ModBlocks.RED_BROWN_CABINET.get());
+                        pOutput.accept(ModBlocks.RED_BRICK_CAFE_BAR.get());
+                        pOutput.accept(ModBlocks.SOFT_CEILING_LIGHT.get());
+                        pOutput.accept(ModBlocks.WOOD_ORNAMENT.get());
+                        pOutput.accept(ModBlocks.CAFE_FLOOR.get());
+                    }).build());
     public static void register(IEventBus iEventBus){
         ITEM_GROUPS.register(iEventBus);
     }

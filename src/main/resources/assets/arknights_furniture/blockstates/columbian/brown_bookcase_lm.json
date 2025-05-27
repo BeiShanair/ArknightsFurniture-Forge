@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "arknights_furniture:block/columbian/brown_bookcase_lm",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "arknights_furniture:block/columbian/brown_bookcase_lm"
+    },
+    "facing=south": {
+      "model": "arknights_furniture:block/columbian/brown_bookcase_lm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arknights_furniture:block/columbian/brown_bookcase_lm",
+      "y": 270
+    }
+  }
+}

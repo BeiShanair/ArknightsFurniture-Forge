@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "arknights_furniture:block/columbian/brick_pattern_wallpaper_floor",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "arknights_furniture:block/columbian/brick_pattern_wallpaper_floor"
+    },
+    "facing=south": {
+      "model": "arknights_furniture:block/columbian/brick_pattern_wallpaper_floor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arknights_furniture:block/columbian/brick_pattern_wallpaper_floor",
+      "y": 270
+    }
+  }
+}

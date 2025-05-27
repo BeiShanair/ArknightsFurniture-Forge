@@ -1,4 +1,8 @@
 # 更新日志/ChangeLog
+## 2025-05-27
+- 更新`12号生命循环舱`家具套组
+- Upgrade of `No.12 Life Cycle Cabin` furniture set
+
 ## 2025-05-22
 - 更新`边线/纯色简约家居`家具套组
 - Upgrade of `Side Line/Simple Black-and-White Furniture` furniture set

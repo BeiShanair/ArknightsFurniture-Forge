@@ -1,7 +1,10 @@
 package com.besson.arknights.item;
 
 import com.besson.arknights.ArknightsFurniture;
+import com.besson.arknights.block.ModBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -98,6 +101,15 @@ public class ModItems {
     public static final RegistryObject<Item> YAN_LOGO =
             ITEM.register("yan_logo", () -> new Item(new Item.Properties()));
 
+//    public static final RegistryObject<Item> LARGE_SHELF = registerSameBlockItems(
+//            ModBlocks.LARGE_SHELF1.get(), ModBlocks.LARGE_SHELF2.get(), ModBlocks.LARGE_SHELF3.get(), ModBlocks.LARGE_SHELF4.get());
+//    private static RegistryObject<Item> registerSameBlockItems(Block block, Block... blocks){
+//        BlockItem blockItem = new BlockItem(block, new Item.Properties());
+//        for (Block b : blocks){
+//            Item.BY_BLOCK.put(b, blockItem);
+//        }
+//        return ITEM.register(block.getDescriptionId(), () -> blockItem);
+//    }
     public static void register(IEventBus iEventBus){
         ITEM.register(iEventBus);
     }
