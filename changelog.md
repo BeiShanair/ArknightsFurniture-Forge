@@ -1,7 +1,7 @@
 # 更新日志/ChangeLog
 ## 2025-05-27
-- 更新`12号生命循环舱`家具套组
-- Upgrade of `No.12 Life Cycle Cabin` furniture set
+- 更新`哥伦比亚咖啡馆`家具套组
+- Upgrade of `Columbian Cafe` furniture set
 
 ## 2025-05-22
 - 更新`边线/纯色简约家居`家具套组
