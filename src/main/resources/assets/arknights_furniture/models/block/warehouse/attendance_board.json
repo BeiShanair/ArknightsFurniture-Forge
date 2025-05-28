@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
+	"ambientocclusion": false,
 	"textures": {
 		"1": "arknights_furniture:block/warehouse/attendance_board",
 		"particle": "arknights_furniture:block/yellow"
