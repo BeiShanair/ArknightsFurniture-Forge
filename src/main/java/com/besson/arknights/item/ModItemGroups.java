@@ -14,6 +14,7 @@ public class ModItemGroups {
     public static final DeferredRegister<CreativeModeTab> ITEM_GROUPS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ArknightsFurniture.MOD_ID);
 
+    // region LOGO
     public static final RegistryObject<CreativeModeTab> LOGO =
             ITEM_GROUPS.register("logo", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.ABYSSAL_HUNTERS_LOGO.get()))
@@ -64,7 +65,9 @@ public class ModItemGroups {
                         pOutput.accept(ModItems.YAN_LOGO.get());
                     })
                     .build());
+    // endregion
 
+    // region WAREHOUSE
     public static final RegistryObject<CreativeModeTab> WAREHOUSE =
             ITEM_GROUPS.register("warehouse", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.CARTON.get()))
@@ -86,7 +89,9 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.CONCRETE_WALL.get());
                         pOutput.accept(ModBlocks.DORMITORY_DOOR_FRAMES.get());
                     }).build());
+    // endregion
 
+    // region SIDE LINE
     public static final RegistryObject<CreativeModeTab> SIDE_LINE =
             ITEM_GROUPS.register("side_line", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.SIMPLE_BLACK_CLOCK.get()))
@@ -109,7 +114,9 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.GRAYISH_WALL_TBL.get());
                         pOutput.accept(ModBlocks.SMALL_CEILING_LIGHT.get());
                     }).build());
+    // endregion
 
+    // region COLUMBIAN CAFE
     public static final RegistryObject<CreativeModeTab> COLUMBIAN_CAFE =
             ITEM_GROUPS.register("columbian_cafe", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.BOLIVARIAN_COFFEE_BEAN.get()))
@@ -138,6 +145,33 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.WOOD_ORNAMENT.get());
                         pOutput.accept(ModBlocks.CAFE_FLOOR.get());
                     }).build());
+    // endregion
+
+    // region FANTASTIC BIO DOCUMENTARY
+    public static final RegistryObject<CreativeModeTab> FANTASTIC_BIO_DOCUMENTARY =
+            ITEM_GROUPS.register("fantastic_bio_documentary", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.WIRE_SIDE_TABLE.get()))
+                    .title(Component.translatable("itemGroup.fantastic_bio-documentary"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.BROWN_BEAN_BAG_SOFA.get());
+                        pOutput.accept(ModBlocks.ECO_EXHIBITION_CABINET_BASE.get());
+                        pOutput.accept(ModBlocks.FLUSH_MOUNT_RECTANGLE_CEILING_LIGHT.get());
+                        pOutput.accept(ModBlocks.FLUSH_MOUNT_SQUARE_CEILING_LIGHT.get());
+                        pOutput.accept(ModBlocks.METALLIC_BED.get());
+                        pOutput.accept(ModBlocks.POTTED_BROADLEAF_PLANT.get());
+                        pOutput.accept(ModBlocks.POTTED_CONIFER_PLANT.get());
+                        pOutput.accept(ModBlocks.POTTED_SUCCULENT_PLANT.get());
+                        pOutput.accept(ModBlocks.SMALL_SQUARE_NIGHTSTAND.get());
+                        pOutput.accept(ModBlocks.SPECIMEN_DATA_BOARD.get());
+                        pOutput.accept(ModBlocks.WIRE_SIDE_TABLE.get());
+                        pOutput.accept(ModBlocks.COPPER_FLOOR_FRONT.get());
+                        pOutput.accept(ModBlocks.METALLIC_WALLPAPER_BOTTOM.get());
+                        pOutput.accept(ModBlocks.METALLIC_WALLPAPER_LB.get());
+                        pOutput.accept(ModBlocks.UNKNOWN_SPECIMENS.get());
+                        pOutput.accept(ModBlocks.WIDE_GRAY_CARPET_LEFT.get());
+                        pOutput.accept(ModBlocks.UNKNOWN_BONES.get());
+                    }).build());
+    // endregion
     public static void register(IEventBus iEventBus){
         ITEM_GROUPS.register(iEventBus);
     }

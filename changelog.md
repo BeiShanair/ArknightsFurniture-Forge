@@ -1,4 +1,8 @@
 # 更新日志/ChangeLog
+## 2025-05-28
+- 更新`幻想生物纪实`家具套组
+- Upgrade of `Fantastic Bio-Documentary` furniture set
+
 ## 2025-05-27
 - 更新`哥伦比亚咖啡馆`家具套组
 - Upgrade of `Columbian Cafe` furniture set

@@ -2,6 +2,7 @@ package com.besson.arknights.block;
 
 import com.besson.arknights.ArknightsFurniture;
 import com.besson.arknights.block.columbian.RedBrownCabinetBE;
+import com.besson.arknights.block.fantastic.SmallSquareNightstandBE;
 import com.besson.arknights.block.sideline.CheckerboardBookcaseBE;
 import com.besson.arknights.block.sideline.NightstandBE;
 import com.besson.arknights.block.sideline.SimpleCabinetBE;
@@ -68,6 +69,11 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<RedBrownCabinetBE>> RED_BROWN_CABINET =
             register("red_brown_cabinet", RedBrownCabinetBE::new,
                     () -> new Block[]{ModBlocks.RED_BROWN_CABINET.get()});
+
+    public static final RegistryObject<BlockEntityType<SmallSquareNightstandBE>> SMALL_SQUARE_NIGHTSTAND =
+            register("small_square_nightstand", SmallSquareNightstandBE::new,
+                    () -> new Block[]{ModBlocks.SMALL_SQUARE_NIGHTSTAND.get()});
+
     private static <T extends Entity> RegistryObject<EntityType<T>> register(String name, EntityType.Builder<T> builder)
     {
         return ENTITY_TYPES.register(name, () -> builder.build(name));

@@ -108,10 +108,29 @@
   "block.arknights_furniture.columbian.soft_ceiling_light": "柔和顶灯",
   "block.arknights_furniture.columbian.wood_ornament": "木制摆件",
 
+  "block.arknights_furniture.fantastic.brown_bean_bag_sofa": "褐色懒人沙发",
+  "block.arknights_furniture.fantastic.copper_floor_front": "铜色地板",
+  "block.arknights_furniture.fantastic.eco_exhibition_cabinet_base": "生态展览柜",
+  "block.arknights_furniture.fantastic.flush_mount_rectangle_ceiling_light": "内嵌宽顶灯",
+  "block.arknights_furniture.fantastic.flush_mount_square_ceiling_light": "内嵌方顶灯",
+  "block.arknights_furniture.fantastic.metallic_bed": "金属大床",
+  "block.arknights_furniture.fantastic.metallic_wallpaper_bottom": "金属墙纸 #1",
+  "block.arknights_furniture.fantastic.metallic_wallpaper_lb": "金属墙纸 #2",
+  "block.arknights_furniture.fantastic.potted_broadleaf_plant": "阔叶盆栽",
+  "block.arknights_furniture.fantastic.potted_conifer_plant": "针叶盆栽",
+  "block.arknights_furniture.fantastic.potted_succulent_plant": "厚叶盆栽",
+  "block.arknights_furniture.fantastic.small_square_nightstand": "方形床头矮柜",
+  "block.arknights_furniture.fantastic.specimen_data_board": "展出标本资料板",
+  "block.arknights_furniture.fantastic.unknown_bones": "未确认生物骨骼",
+  "block.arknights_furniture.fantastic.unknown_specimens": "未知生物标本集",
+  "block.arknights_furniture.fantastic.wide_gray_carpet_left": "灰色宽地毯",
+  "block.arknights_furniture.fantastic.wire_side_table": "筐形矮茶几",
+
   "itemGroup.logo": "Logo",
   "itemGroup.warehouse": "货运仓库",
   "itemGroup.side_line": "边线/ 纯色/橘色 简约家居",
   "itemGroup.columbian_cafe": "哥伦比亚咖啡馆",
+  "itemGroup.fantastic_bio-documentary": "幻想生物纪实",
 
   "container.carton": "纸箱",
   "container.large_shelf": "大号货架",
@@ -119,6 +138,7 @@
   "container.nightstand": "床头柜",
   "container.simple_cabinet": "简拼桌柜",
   "container.red_brown_cabinet": "红砖色储物柜",
+  "container.small_square_nightstand": "方形床头矮柜",
 
   "tooltip.arknights.large_shelf": "它可以存储9个物品",
   "tooltip.arknights.large_shelf_empty": "它可以存储3个物品，可以渲染存储的物品"

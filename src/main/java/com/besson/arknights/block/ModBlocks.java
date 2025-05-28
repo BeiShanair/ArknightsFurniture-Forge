@@ -2,6 +2,7 @@ package com.besson.arknights.block;
 
 import com.besson.arknights.ArknightsFurniture;
 import com.besson.arknights.block.columbian.*;
+import com.besson.arknights.block.fantastic.*;
 import com.besson.arknights.block.sideline.*;
 import com.besson.arknights.block.warehouse.*;
 import com.besson.arknights.item.ModItems;
@@ -105,6 +106,33 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOFT_CEILING_LIGHT = registerBlocks("columbian/soft_ceiling_light",() -> new SoftCeilingLight(Block.Properties.of().strength(0.1f, 0.1f).noOcclusion()));
     public static final RegistryObject<Block> WOOD_ORNAMENT = registerBlocks("columbian/wood_ornament",() -> new WoodOrnament(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> CAFE_FLOOR = registerBlocks("columbian/cafe_floor",() -> new Block(Block.Properties.of().strength(0.1f, 0.1f)));
+
+    public static final RegistryObject<Block> BROWN_BEAN_BAG_SOFA = registerBlocks("fantastic/brown_bean_bag_sofa", () -> new BrownBeanBagSofa(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> ECO_EXHIBITION_CABINET = registerBlockWithoutItems("fantastic/eco_exhibition_cabinet",() -> new EcoExhibitionCabinetBase(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> ECO_EXHIBITION_CABINET_BASE = registerBlocks("fantastic/eco_exhibition_cabinet_base",() -> new EcoExhibitionCabinetBase(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> FLUSH_MOUNT_RECTANGLE_CEILING_LIGHT = registerBlocks("fantastic/flush_mount_rectangle_ceiling_light",() -> new FlushMountRectangleCeilingLight(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> FLUSH_MOUNT_SQUARE_CEILING_LIGHT = registerBlocks("fantastic/flush_mount_square_ceiling_light",() -> new FlushMountSquareCeilingLight(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> METALLIC_BED = registerBlocks("fantastic/metallic_bed",() -> new MetallicBed(DyeColor.BLACK, Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_BROADLEAF_PLANT = registerBlocks("fantastic/potted_broadleaf_plant",() -> new PottedBroadleafPlant(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> POTTED_CONIFER_PLANT = registerBlocks("fantastic/potted_conifer_plant",() -> new PottedConiferPlant(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> POTTED_SUCCULENT_PLANT = registerBlocks("fantastic/potted_succulent_plant",() -> new PottedSucculentPlant(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> SMALL_SQUARE_NIGHTSTAND = registerBlocks("fantastic/small_square_nightstand",() -> new SmallSquareNightstand(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion(),ModBlockEntities.SMALL_SQUARE_NIGHTSTAND::get));
+    public static final RegistryObject<Block> SPECIMEN_DATA_BOARD = registerBlocks("fantastic/specimen_data_board",() -> new SpecimenDataBoard(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> WIRE_SIDE_TABLE = registerBlocks("fantastic/wire_side_table",() -> new WireSideTable(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> COPPER_FLOOR_FRONT = registerBlocks("fantastic/copper_floor_front",() -> new CopperFloor(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> COPPER_FLOOR_BEHIND = registerBlockWithoutItems("fantastic/copper_floor_behind",() -> new CopperFloor(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_BOTTOM = registerBlocks("fantastic/metallic_wallpaper_bottom",() -> new MetallicWallpaper1(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_TOP = registerBlockWithoutItems("fantastic/metallic_wallpaper_top",() -> new MetallicWallpaper1(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_LB = registerBlocks("fantastic/metallic_wallpaper_lb",() -> new MetallicWallpaper2(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_LT = registerBlockWithoutItems("fantastic/metallic_wallpaper_lt",() -> new MetallicWallpaper2(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_RB = registerBlockWithoutItems("fantastic/metallic_wallpaper_rb",() -> new MetallicWallpaper2(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> METALLIC_WALLPAPER_RT = registerBlockWithoutItems("fantastic/metallic_wallpaper_rt",() -> new MetallicWallpaper2(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> UNKNOWN_SPECIMENS = registerBlocks("fantastic/unknown_specimens",() -> new UnknownSpecimens(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> WIDE_GRAY_CARPET_LEFT = registerBlocks("fantastic/wide_gray_carpet_left",() -> new WideGrayCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> WIDE_GRAY_CARPET_RIGHT = registerBlockWithoutItems("fantastic/wide_gray_carpet_right",() -> new WideGrayCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> UNKNOWN_BONES = registerBlocks("fantastic/unknown_bones",() -> new UnknownBones(Block.Properties.of().strength(0.2f, 0.2f)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlockWithoutItems(String id, Supplier<T> block){
         return BLOCKS.register(id, block);
     }
