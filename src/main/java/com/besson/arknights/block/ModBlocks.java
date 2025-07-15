@@ -3,6 +3,7 @@ package com.besson.arknights.block;
 import com.besson.arknights.ArknightsFurniture;
 import com.besson.arknights.block.columbian.*;
 import com.besson.arknights.block.fantastic.*;
+import com.besson.arknights.block.lifecycle.*;
 import com.besson.arknights.block.sideline.*;
 import com.besson.arknights.block.warehouse.*;
 import com.besson.arknights.item.ModItems;
@@ -132,6 +133,31 @@ public class ModBlocks {
     public static final RegistryObject<Block> WIDE_GRAY_CARPET_RIGHT = registerBlockWithoutItems("fantastic/wide_gray_carpet_right",() -> new WideGrayCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> UNKNOWN_BONES = registerBlocks("fantastic/unknown_bones",() -> new UnknownBones(Block.Properties.of().strength(0.2f, 0.2f)));
 
+    public static final RegistryObject<Block> ANTI_EXPLOSION_TRASH_CAN = registerBlocks("lifecycle/anti_explosion_trash_can",() -> new AntiExplosionTrashCan(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BLACK_FIBER_CARPET = registerBlocks("lifecycle/black_fiber_carpet",() -> new BlackFiberCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BLACK_HANGING_BASKET = registerBlocks("lifecycle/black_hanging_basket",() -> new BlackHangingBasket(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BUILT_IN_FILE_CABINET1 = registerBlocks("lifecycle/built_in_file_cabinet1",() -> new BuiltInFileCabinet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BUILT_IN_FILE_CABINET2 = registerBlocks("lifecycle/built_in_file_cabinet2",() -> new BuiltInFileCabinet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BUNK_BED_IN_CABIN_TOP = registerBlocks("lifecycle/bunk_bed_in_cabin_top",() -> new BunkBedInCabinTop(DyeColor.BLACK, Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> BUNK_BED_IN_CABIN_BOTTOM = registerBlocks("lifecycle/bunk_bed_in_cabin_bottom",() -> new BunkBedInCabin(DyeColor.BLACK, Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> CABIN_FIRE_EXTINGUISHER_KIT = registerBlocks("lifecycle/cabin_fire_extinguisher_kit",() -> new CabinFireExtinguisherKit(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> CABIN_FLUSH_MOUNT_PIPE_LEFT = registerBlocks("lifecycle/cabin_flush_mount_pipe_left",() -> new CabinFlushMountPipe(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> CABIN_FLUSH_MOUNT_PIPE_RIGHT = registerBlocks("lifecycle/cabin_flush_mount_pipe_right",() -> new CabinFlushMountPipe(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> CONTROL_DISPLAY = registerBlocks("lifecycle/control_display",() -> new ControlDisplay(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> DIY_SWIVEL_CHAIR = registerBlocks("lifecycle/diy_swivel_chair",() -> new DiySwivelChair(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> DIY_WORKBENCH_LEFT = registerBlocks("lifecycle/diy_workbench_left",() -> new DiyWorkbench(Block.Properties.of().noOcclusion().strength(0.3f, 0.2f)));
+    public static final RegistryObject<Block> DIY_WORKBENCH_RIGHT = registerBlocks("lifecycle/diy_workbench_right",() -> new DiyWorkbench(Block.Properties.of().noOcclusion().strength(0.3f, 0.2f)));
+    public static final RegistryObject<Block> GENERAL_CONSOLE = registerBlocks("lifecycle/general_console",() -> new GeneralConsole(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER = registerBlocks("lifecycle/light_green_wallpaper",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER_FLOOR_MIDDLE = registerBlocks("lifecycle/light_green_wallpaper_floor_middle",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER_FLOOR_RIGHT = registerBlocks("lifecycle/light_green_wallpaper_floor_right",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER_REFUGE = registerBlocks("lifecycle/light_green_wallpaper_refuge",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER_REFUGE2 = registerBlocks("lifecycle/light_green_wallpaper_refuge2",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> LIGHT_GREEN_WALLPAPER_RIGHT = registerBlocks("lifecycle/light_green_wallpaper_right",() -> new FurnitureHorizontalFacingBlock(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> NOTE_BOARD_IN_CABIN_DISPLAY = registerBlocks("lifecycle/note_board_in_cabin_display",() -> new NoteBoardInCabinDisplay(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> NOTE_BOARD_IN_CABIN_SIGN = registerBlocks("lifecycle/note_board_in_cabin_sign",() -> new NoteBoardInCabinSign(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> POWER_BOX = registerBlocks("lifecycle/power_box",() -> new PowerBox(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SUCK_BEVERAGES = registerBlocks("lifecycle/suck_beverages",() -> new SuckBeverages(Block.Properties.of().strength(0.2f, 0.2f)));
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutItems(String id, Supplier<T> block){
         return BLOCKS.register(id, block);

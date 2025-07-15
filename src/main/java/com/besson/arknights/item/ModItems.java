@@ -2,6 +2,7 @@ package com.besson.arknights.item;
 
 import com.besson.arknights.ArknightsFurniture;
 import com.besson.arknights.block.ModBlocks;
+import com.besson.arknights.item.custom.FireExtinguisher;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -13,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEM =
             DeferredRegister.create(ForgeRegistries.ITEMS, ArknightsFurniture.MOD_ID);
-
+    // region Logos
     public static final RegistryObject<Item> ABYSSAL_HUNTERS_LOGO =
             ITEM.register("abyssal_hunters_logo", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> AEGIR_LOGO =
@@ -100,7 +101,25 @@ public class ModItems {
             ITEM.register("victoria_logo", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> YAN_LOGO =
             ITEM.register("yan_logo", () -> new Item(new Item.Properties()));
+    // endregion
 
+    // region Materials
+    public static final RegistryObject<Item> DAMAGED_DEVICE =
+            ITEM.register("material/damaged_device", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIKETON =
+            ITEM.register("material/diketon", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ESTER =
+            ITEM.register("material/ester", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORIROCK =
+            ITEM.register("material/orirock", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORIRON_SHARD =
+            ITEM.register("material/oriron_shard", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SUGAR_SUBSTITUTE =
+            ITEM.register("material/sugar_substitute", () -> new Item(new Item.Properties()));
+    // endregion
+
+    public static final RegistryObject<Item> FIRE_EXTINGUISHER =
+            ITEM.register("fire_extinguisher", () -> new FireExtinguisher(new Item.Properties()));
 //    public static final RegistryObject<Item> LARGE_SHELF = registerSameBlockItems(
 //            ModBlocks.LARGE_SHELF1.get(), ModBlocks.LARGE_SHELF2.get(), ModBlocks.LARGE_SHELF3.get(), ModBlocks.LARGE_SHELF4.get());
 //    private static RegistryObject<Item> registerSameBlockItems(Block block, Block... blocks){

@@ -1,4 +1,13 @@
 # 更新日志/ChangeLog
+
+## 2025-07-15
+- 添加级别`T1`的一些材料
+- Add some materials of level `T1`
+- 重制`12号生命循环舱`家具套组模型及贴图
+- Rebuild the model and texture of the `No.12 Life Cycle Cabin` furniture set
+- `灭火器`现在作为一个可以使用的物品（右键使用），可以扑灭火焰
+- The `Fire Extinguisher` is now a usable item (right-click to use) that can extinguish flames
+
 ## 2025-05-28
 - 更新`幻想生物纪实`家具套组
 - Upgrade of `Fantastic Bio-Documentary` furniture set

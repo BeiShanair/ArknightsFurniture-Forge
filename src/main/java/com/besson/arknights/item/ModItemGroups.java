@@ -13,6 +13,19 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItemGroups {
     public static final DeferredRegister<CreativeModeTab> ITEM_GROUPS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ArknightsFurniture.MOD_ID);
+    // region Material
+    public static final RegistryObject<CreativeModeTab> MATERIAL =
+            ITEM_GROUPS.register("material", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ORIROCK.get()))
+                    .title(Component.translatable("itemGroup.material"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.DAMAGED_DEVICE.get());
+                        pOutput.accept(ModItems.DIKETON.get());
+                        pOutput.accept(ModItems.ESTER.get());
+                        pOutput.accept(ModItems.ORIROCK.get());
+                        pOutput.accept(ModItems.ORIRON_SHARD.get());
+                        pOutput.accept(ModItems.SUGAR_SUBSTITUTE.get());
+                    }).build());
 
     // region LOGO
     public static final RegistryObject<CreativeModeTab> LOGO =
@@ -172,6 +185,40 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.UNKNOWN_BONES.get());
                     }).build());
     // endregion
+
+    // region No.12 Life Cycle Cabin
+    public static final RegistryObject<CreativeModeTab> NO_12_LIFE_CYCLE_CABIN =
+            ITEM_GROUPS.register("no_12_life_cycle_cabin", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.BLACK_HANGING_BASKET.get()))
+                    .title(Component.translatable("itemGroup.no_12_life_cycle_cabin"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.ANTI_EXPLOSION_TRASH_CAN.get());
+                        pOutput.accept(ModBlocks.BLACK_FIBER_CARPET.get());
+                        pOutput.accept(ModBlocks.BLACK_HANGING_BASKET.get());
+                        pOutput.accept(ModBlocks.BUILT_IN_FILE_CABINET1.get());
+                        pOutput.accept(ModBlocks.BUILT_IN_FILE_CABINET2.get());
+                        pOutput.accept(ModBlocks.BUNK_BED_IN_CABIN_TOP.get());
+                        pOutput.accept(ModBlocks.BUNK_BED_IN_CABIN_BOTTOM.get());
+                        pOutput.accept(ModBlocks.CABIN_FIRE_EXTINGUISHER_KIT.get());
+                        pOutput.accept(ModBlocks.CABIN_FLUSH_MOUNT_PIPE_LEFT.get());
+                        pOutput.accept(ModBlocks.CABIN_FLUSH_MOUNT_PIPE_RIGHT.get());
+                        pOutput.accept(ModBlocks.CONTROL_DISPLAY.get());
+                        pOutput.accept(ModBlocks.DIY_SWIVEL_CHAIR.get());
+                        pOutput.accept(ModBlocks.DIY_WORKBENCH_LEFT.get());
+                        pOutput.accept(ModBlocks.DIY_WORKBENCH_RIGHT.get());
+                        pOutput.accept(ModItems.FIRE_EXTINGUISHER.get());
+                        pOutput.accept(ModBlocks.GENERAL_CONSOLE.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER_FLOOR_MIDDLE.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER_FLOOR_RIGHT.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER_REFUGE.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER_REFUGE2.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_WALLPAPER_RIGHT.get());
+                        pOutput.accept(ModBlocks.NOTE_BOARD_IN_CABIN_DISPLAY.get());
+                        pOutput.accept(ModBlocks.NOTE_BOARD_IN_CABIN_SIGN.get());
+                        pOutput.accept(ModBlocks.POWER_BOX.get());
+                        pOutput.accept(ModBlocks.SUCK_BEVERAGES.get());
+                    }).build());
     public static void register(IEventBus iEventBus){
         ITEM_GROUPS.register(iEventBus);
     }
