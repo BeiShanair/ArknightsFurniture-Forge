@@ -26,6 +26,7 @@ public class ModItemGroups {
                         pOutput.accept(ModItems.ORIRON_SHARD.get());
                         pOutput.accept(ModItems.SUGAR_SUBSTITUTE.get());
                     }).build());
+    // endregion
 
     // region LOGO
     public static final RegistryObject<CreativeModeTab> LOGO =
@@ -219,6 +220,30 @@ public class ModItemGroups {
                         pOutput.accept(ModBlocks.POWER_BOX.get());
                         pOutput.accept(ModBlocks.SUCK_BEVERAGES.get());
                     }).build());
+    // endregion
+
+    // region LDG
+    public static final RegistryObject<CreativeModeTab> LDG_LOUNGE =
+            ITEM_GROUPS.register("ldg_lounge", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.BLACK_PEDESTAL_TABLE.get()))
+                    .title(Component.translatable("itemGroup.ldg_faux_lungmen_lounge"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.BLACK_PEDESTAL_TABLE.get());
+                        pOutput.accept(ModBlocks.BLACK_VINTAGE_CHAIR.get());
+                        pOutput.accept(ModBlocks.BLACK_VINTAGE_STOOL.get());
+                        pOutput.accept(ModBlocks.BRIGHT_WALL_LIGHT.get());
+                        pOutput.accept(ModBlocks.DUPLEX_WOODEN_FENCE_TOP.get());
+                        pOutput.accept(ModBlocks.DUPLEX_WOODEN_FENCE_BOTTOM.get());
+                        pOutput.accept(ModBlocks.DUPLEX_WOODEN_FENCE_BOTTOM_LIGHT.get());
+                        pOutput.accept(ModBlocks.LOW_SANDALWOOD_MEETING_TABLE.get());
+                        pOutput.accept(ModBlocks.SANDALWOOD_BED.get());
+                        pOutput.accept(ModBlocks.SANDALWOOD_MEETING_BOARD.get());
+                        pOutput.accept(ModBlocks.SIMPLE_BLACK_LOUNGE_CHAIR.get());
+                        pOutput.accept(ModBlocks.SMALL_SANDALWOOD_NIGHTSTAND.get());
+                        pOutput.accept(ModBlocks.GRAY_WOOL_CARPET_LEFT.get());
+                    }).build());
+    // endregion
+
     public static void register(IEventBus iEventBus){
         ITEM_GROUPS.register(iEventBus);
     }

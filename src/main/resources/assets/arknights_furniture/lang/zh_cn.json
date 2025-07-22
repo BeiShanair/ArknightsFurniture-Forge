@@ -152,6 +152,21 @@
   "block.arknights_furniture.lifecycle.power_box": "配电箱",
   "block.arknights_furniture.lifecycle.suck_beverages": "吸吸乐饮品",
 
+  "block.arknights_furniture.ldg.black_pedestal_table": "黑色独脚桌",
+  "block.arknights_furniture.ldg.black_vintage_chair": "黑色复古椅",
+  "block.arknights_furniture.ldg.black_vintage_stool": "黑色复古凳",
+  "block.arknights_furniture.ldg.bright_wall_light": "明亮挂灯",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_bottom": "复式木制墙栏（下部）",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_bottom_light": "复式木制墙栏（地灯）",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_top": "复式木制墙栏（上部）",
+  "block.arknights_furniture.ldg.gray_wool_carpet_left": "灰色绒毛地毯",
+  "block.arknights_furniture.ldg.low_sandalwood_meeting_table": "檀木低脚会议桌",
+  "block.arknights_furniture.ldg.sandalwood_bed": "檀木大床",
+  "block.arknights_furniture.ldg.sandalwood_meeting_board": "檀木会议板",
+  "block.arknights_furniture.ldg.simple_black_lounge_chair": "黑色简装矮沙发",
+  "block.arknights_furniture.ldg.small_sandalwood_nightstand": "檀木床头矮柜",
+  "block.arknights_furniture.ldg.painting_with_sandalwood_frame": "檀木相框挂画",
+
   "item.arknights_furniture.material.damaged_device": "破损装置",
   "item.arknights_furniture.material.diketon": "双酮",
   "item.arknights_furniture.material.ester": "酯原料",
@@ -168,6 +183,7 @@
   "itemGroup.columbian_cafe": "哥伦比亚咖啡馆",
   "itemGroup.fantastic_bio-documentary": "幻想生物纪实",
   "itemGroup.no_12_life_cycle_cabin": "12号生命循环舱",
+  "itemGroup.ldg_faux_lungmen_lounge": "近卫局/仿龙门式 休息室",
 
   "container.carton": "纸箱",
   "container.large_shelf": "大号货架",
@@ -176,6 +192,7 @@
   "container.simple_cabinet": "简拼桌柜",
   "container.red_brown_cabinet": "红砖色储物柜",
   "container.small_square_nightstand": "方形床头矮柜",
+  "container.small_sandalwood_nightstand": "床头矮柜",
 
   "tooltip.arknights.large_shelf": "它可以存储9个物品",
   "tooltip.arknights.large_shelf_empty": "它可以存储3个物品，可以渲染存储的物品"

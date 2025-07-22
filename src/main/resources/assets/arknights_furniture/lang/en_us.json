@@ -152,6 +152,21 @@
   "block.arknights_furniture.lifecycle.power_box": "Power Box",
   "block.arknights_furniture.lifecycle.suck_beverages": "Suck Beverages",
 
+  "block.arknights_furniture.ldg.black_pedestal_table": "Black Pedestal Table",
+  "block.arknights_furniture.ldg.black_vintage_chair": "Black Vintage Chair",
+  "block.arknights_furniture.ldg.black_vintage_stool": "Black Vintage Stool",
+  "block.arknights_furniture.ldg.bright_wall_light": "Bright Wall Light",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_bottom": "Duplex Wooden Fence Bottom",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_bottom_light": "Duplex Wooden Fence Bottom Light",
+  "block.arknights_furniture.ldg.duplex_wooden_fence_top": "Duplex Wooden Fence Top",
+  "block.arknights_furniture.ldg.gray_wool_carpet_left": "Gray Wool Carpet",
+  "block.arknights_furniture.ldg.low_sandalwood_meeting_table": "Low Sandalwood Meeting Table",
+  "block.arknights_furniture.ldg.sandalwood_bed": "Sandalwood Bed",
+  "block.arknights_furniture.ldg.sandalwood_meeting_board": "Sandalwood Meeting Board",
+  "block.arknights_furniture.ldg.simple_black_lounge_chair": "Simple Black Lounge Chair",
+  "block.arknights_furniture.ldg.small_sandalwood_nightstand": "Small Sandalwood Nightstand",
+  "block.arknights_furniture.ldg.painting_with_sandalwood_frame": "Painting With Sandalwood Frame",
+
   "item.arknights_furniture.material.damaged_device": "Damaged Device",
   "item.arknights_furniture.material.diketon": "Diketon",
   "item.arknights_furniture.material.ester": "Ester",
@@ -168,6 +183,7 @@
   "itemGroup.columbian_cafe": "Columbian Cafe",
   "itemGroup.fantastic_bio-documentary": "Fantastic Bio-Documentary",
   "itemGroup.no_12_life_cycle_cabin": "No.12 Life Cycle Cabin",
+  "itemGroup.ldg_faux_lungmen_lounge": "L.D.G./Faux Lungmen Lounge",
 
   "container.carton": "Carton",
   "container.large_shelf": "Large Shelf",
@@ -176,6 +192,7 @@
   "container.simple_cabinet": "Simple Cabinet",
   "container.red_brown_cabinet": "Red Brown Cabinet",
   "container.small_square_nightstand": "Small Square Nightstand",
+  "container.small_sandalwood_nightstand": "Small Sandalwood Nightstand",
 
   "tooltip.arknights.large_shelf": "It can store up to 9 items.",
   "tooltip.arknights.large_shelf_empty": "It can store up to 3 items.Stored items can be rendered."

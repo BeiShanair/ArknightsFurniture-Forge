@@ -3,6 +3,7 @@ package com.besson.arknights.block;
 import com.besson.arknights.ArknightsFurniture;
 import com.besson.arknights.block.columbian.*;
 import com.besson.arknights.block.fantastic.*;
+import com.besson.arknights.block.lgd.*;
 import com.besson.arknights.block.lifecycle.*;
 import com.besson.arknights.block.sideline.*;
 import com.besson.arknights.block.warehouse.*;
@@ -22,6 +23,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ArknightsFurniture.MOD_ID);
 
+    // region Warehouse
     public static final RegistryObject<Block> AIR_MATTRESS = registerBlocks("warehouse/air_mattress", () -> new AirMattress(DyeColor.BLACK, Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
     public static final RegistryObject<Block> ATTENDANCE_BOARD = registerBlocks("warehouse/attendance_board", () -> new AttendanceBoard(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
     public static final RegistryObject<Block> CARGO_TROLLEY = registerBlocks("warehouse/cargo_trolley", () -> new CargoTrolley(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
@@ -40,7 +42,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CEILING_ROW_LIGHT = registerBlocks("warehouse/ceiling_row_light", () -> new CeilingRowLight(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
     public static final RegistryObject<Block> CONCRETE_WALL = registerBlocks("warehouse/concrete_wall", () -> new ConcreteWall(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
     public static final RegistryObject<Block> DORMITORY_DOOR_FRAMES = registerBlocks("warehouse/dormitory_door_frames", () -> new DormitoryDoorFrames(Block.Properties.of().strength(0.2f,0.2f).noOcclusion()));
+    // endregion
 
+    // region Sideline
     public static final RegistryObject<Block> GRAYISH_WALL_LIGHT = registerBlocks("sideline/grayish_wall_light",() -> new WallLight(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> SIMPLE_BLACK_CLOCK = registerBlocks("sideline/simple_black_clock",() -> new SimpleClock(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> BLACK_HD_TV = registerBlocks("sideline/black_hd_tv",() -> new HDTV(Block.Properties.of().strength(0.2f, 0.1f)));
@@ -79,7 +83,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RBR = registerBlockWithoutItems("sideline/simple_black_desk_rbr",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RTL = registerBlockWithoutItems("sideline/simple_black_desk_rtl",() -> new BlackSimpleDeskMiddle(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> SIMPLE_BLACK_DESK_RTR = registerBlockWithoutItems("sideline/simple_black_desk_rtr",() -> new BlackSimpleDesk(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    // endregion
 
+    // region Columbian
     public static final RegistryObject<Block> BAR_CEILING = registerBlocks("columbian/bar_ceiling",() -> new BarCeiling(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> BARSTOOL_WITH_CURVED_LEGS = registerBlocks("columbian/barstool_with_curved_legs",() -> new BarstoolWithCurvedLegs(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
     public static final RegistryObject<Block> BEVERAGE_CABINET_COFFEE = registerBlocks("columbian/beverage_cabinet_coffee",() -> new BeverageCabinet(Block.Properties.of().strength(0.2f, 0.2f)));
@@ -107,7 +113,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOFT_CEILING_LIGHT = registerBlocks("columbian/soft_ceiling_light",() -> new SoftCeilingLight(Block.Properties.of().strength(0.1f, 0.1f).noOcclusion()));
     public static final RegistryObject<Block> WOOD_ORNAMENT = registerBlocks("columbian/wood_ornament",() -> new WoodOrnament(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> CAFE_FLOOR = registerBlocks("columbian/cafe_floor",() -> new Block(Block.Properties.of().strength(0.1f, 0.1f)));
+    // endregion
 
+    // region Fantastic
     public static final RegistryObject<Block> BROWN_BEAN_BAG_SOFA = registerBlocks("fantastic/brown_bean_bag_sofa", () -> new BrownBeanBagSofa(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
     public static final RegistryObject<Block> ECO_EXHIBITION_CABINET = registerBlockWithoutItems("fantastic/eco_exhibition_cabinet",() -> new EcoExhibitionCabinetBase(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
     public static final RegistryObject<Block> ECO_EXHIBITION_CABINET_BASE = registerBlocks("fantastic/eco_exhibition_cabinet_base",() -> new EcoExhibitionCabinetBase(Block.Properties.of().strength(0.2f, 0.2f)));
@@ -132,7 +140,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> WIDE_GRAY_CARPET_LEFT = registerBlocks("fantastic/wide_gray_carpet_left",() -> new WideGrayCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> WIDE_GRAY_CARPET_RIGHT = registerBlockWithoutItems("fantastic/wide_gray_carpet_right",() -> new WideGrayCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> UNKNOWN_BONES = registerBlocks("fantastic/unknown_bones",() -> new UnknownBones(Block.Properties.of().strength(0.2f, 0.2f)));
+    // endregion
 
+    // region Lifecycle
     public static final RegistryObject<Block> ANTI_EXPLOSION_TRASH_CAN = registerBlocks("lifecycle/anti_explosion_trash_can",() -> new AntiExplosionTrashCan(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> BLACK_FIBER_CARPET = registerBlocks("lifecycle/black_fiber_carpet",() -> new BlackFiberCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> BLACK_HANGING_BASKET = registerBlocks("lifecycle/black_hanging_basket",() -> new BlackHangingBasket(Block.Properties.of().strength(0.2f, 0.2f)));
@@ -158,7 +168,25 @@ public class ModBlocks {
     public static final RegistryObject<Block> NOTE_BOARD_IN_CABIN_SIGN = registerBlocks("lifecycle/note_board_in_cabin_sign",() -> new NoteBoardInCabinSign(Block.Properties.of().strength(0.1f, 0.1f)));
     public static final RegistryObject<Block> POWER_BOX = registerBlocks("lifecycle/power_box",() -> new PowerBox(Block.Properties.of().strength(0.2f, 0.2f)));
     public static final RegistryObject<Block> SUCK_BEVERAGES = registerBlocks("lifecycle/suck_beverages",() -> new SuckBeverages(Block.Properties.of().strength(0.2f, 0.2f)));
+    // endregion
 
+    // region LGD
+    public static final RegistryObject<Block> BLACK_PEDESTAL_TABLE = registerBlocks("ldg/black_pedestal_table",() -> new BlackPedestalTable(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BLACK_VINTAGE_CHAIR = registerBlocks("ldg/black_vintage_chair",() -> new BlackVintageChair(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BLACK_VINTAGE_STOOL = registerBlocks("ldg/black_vintage_stool",() -> new BlackVintageStool(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> BRIGHT_WALL_LIGHT = registerBlocks("ldg/bright_wall_light",() -> new BrightWallLight(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> DUPLEX_WOODEN_FENCE_TOP = registerBlocks("ldg/duplex_wooden_fence_top",() -> new DuplexWoodenFence(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> DUPLEX_WOODEN_FENCE_BOTTOM = registerBlocks("ldg/duplex_wooden_fence_bottom",() -> new DuplexWoodenFence(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> DUPLEX_WOODEN_FENCE_BOTTOM_LIGHT = registerBlocks("ldg/duplex_wooden_fence_bottom_light",() -> new DuplexWoodenFenceLight(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> LOW_SANDALWOOD_MEETING_TABLE = registerBlocks("ldg/low_sandalwood_meeting_table",() -> new LowSandalwoodMeetingTable(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> SANDALWOOD_BED = registerBlocks("ldg/sandalwood_bed",() -> new FurnitureBedBlock(DyeColor.BROWN, Block.Properties.of().strength(0.2f, 0.2f).noOcclusion()));
+    public static final RegistryObject<Block> SANDALWOOD_MEETING_BOARD = registerBlocks("ldg/sandalwood_meeting_board",() -> new SandalwoodMeetingBoard(Block.Properties.of().strength(0.1f, 0.1f)));
+    public static final RegistryObject<Block> SIMPLE_BLACK_LOUNGE_CHAIR = registerBlocks("ldg/simple_black_lounge_chair",() -> new SimpleBlackLoungeChair(Block.Properties.of().noOcclusion().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> SMALL_SANDALWOOD_NIGHTSTAND = registerBlocks("ldg/small_sandalwood_nightstand",() -> new SmallSandalwoodNightstand(Block.Properties.of().strength(0.2f, 0.2f).noOcclusion(), ModBlockEntities.SMALL_SANDALWOOD_NIGHTSTAND::get));
+    public static final RegistryObject<Block> GRAY_WOOL_CARPET_LEFT = registerBlocks("ldg/gray_wool_carpet_left",() -> new GrayWoolCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> GRAY_WOOL_CARPET_RIGHT = registerBlocks("ldg/gray_wool_carpet_right",() -> new GrayWoolCarpet(Block.Properties.of().strength(0.2f, 0.2f)));
+    public static final RegistryObject<Block> PAINTING_WITH_SANDALWOOD_FRAME = registerBlocks("ldg/painting_with_sandalwood_frame",() -> new PaintingWithSandalwoodFrame(Block.Properties.of().strength(0.1f, 0.1f)));
+    // endregion
     private static <T extends Block> RegistryObject<T> registerBlockWithoutItems(String id, Supplier<T> block){
         return BLOCKS.register(id, block);
     }
