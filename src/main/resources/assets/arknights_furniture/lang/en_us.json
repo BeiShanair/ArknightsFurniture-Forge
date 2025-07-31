@@ -168,10 +168,16 @@
   "block.arknights_furniture.ldg.painting_with_sandalwood_frame": "Painting With Sandalwood Frame",
 
   "item.arknights_furniture.material.damaged_device": "Damaged Device",
+  "item.arknights_furniture.material.device": "Device",
   "item.arknights_furniture.material.diketon": "Diketon",
   "item.arknights_furniture.material.ester": "Ester",
   "item.arknights_furniture.material.orirock": "Orirock",
+  "item.arknights_furniture.material.orirock_cube": "Orirock Cube",
+  "item.arknights_furniture.material.oriron": "Oriron",
   "item.arknights_furniture.material.oriron_shard": "Orirock Shard",
+  "item.arknights_furniture.material.polyester": "Polyester",
+  "item.arknights_furniture.material.polyketon": "Polyketon",
+  "item.arknights_furniture.material.sugar": "Sugar",
   "item.arknights_furniture.material.sugar_substitute": "Sugar Substitute",
 
   "item.arknights_furniture.fire_extinguisher": "Fire Extinguisher",

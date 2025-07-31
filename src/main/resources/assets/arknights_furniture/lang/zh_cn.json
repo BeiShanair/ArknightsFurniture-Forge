@@ -168,10 +168,16 @@
   "block.arknights_furniture.ldg.painting_with_sandalwood_frame": "檀木相框挂画",
 
   "item.arknights_furniture.material.damaged_device": "破损装置",
+  "item.arknights_furniture.material.device": "装置",
   "item.arknights_furniture.material.diketon": "双酮",
   "item.arknights_furniture.material.ester": "酯原料",
   "item.arknights_furniture.material.orirock": "源岩",
+  "item.arknights_furniture.material.orirock_cube": "固源岩",
+  "item.arknights_furniture.material.oriron": "异铁",
   "item.arknights_furniture.material.oriron_shard": "异铁碎片",
+  "item.arknights_furniture.material.polyester": "聚酸酯",
+  "item.arknights_furniture.material.polyketon": "酮凝集",
+  "item.arknights_furniture.material.sugar": "糖",
   "item.arknights_furniture.material.sugar_substitute": "代糖",
 
   "item.arknights_furniture.fire_extinguisher": "灭火器",

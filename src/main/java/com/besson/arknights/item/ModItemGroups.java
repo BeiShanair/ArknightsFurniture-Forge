@@ -25,6 +25,13 @@ public class ModItemGroups {
                         pOutput.accept(ModItems.ORIROCK.get());
                         pOutput.accept(ModItems.ORIRON_SHARD.get());
                         pOutput.accept(ModItems.SUGAR_SUBSTITUTE.get());
+
+                        pOutput.accept(ModItems.DEVICE.get());
+                        pOutput.accept(ModItems.ORIROCK_CUBE.get());
+                        pOutput.accept(ModItems.POLYKETON.get());
+                        pOutput.accept(ModItems.POLYESTER.get());
+                        pOutput.accept(ModItems.SUGAR.get());
+                        pOutput.accept(ModItems.ORIRON.get());
                     }).build());
     // endregion
 

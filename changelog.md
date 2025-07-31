@@ -1,5 +1,9 @@
 # 更新日志/ChangeLog
 
+## 2025-07-31
+- 添加级别`T2`的一些材料
+- Add some materials of level `T2`
+
 ## 2025-07-22
 - 重制`近卫局休息室`家具套组模型及贴图
 - Rebuild the model and texture of the `L.D.G. Lounge` furniture set

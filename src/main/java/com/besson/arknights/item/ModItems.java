@@ -116,6 +116,19 @@ public class ModItems {
             ITEM.register("material/oriron_shard", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SUGAR_SUBSTITUTE =
             ITEM.register("material/sugar_substitute", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DEVICE =
+            ITEM.register("material/device",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORIROCK_CUBE =
+            ITEM.register("material/orirock_cube",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POLYESTER =
+            ITEM.register("material/polyester",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POLYKETON =
+            ITEM.register("material/polyketon",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SUGAR =
+            ITEM.register("material/sugar",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORIRON =
+            ITEM.register("material/oriron",() -> new Item(new Item.Properties()));
     // endregion
 
     public static final RegistryObject<Item> FIRE_EXTINGUISHER =
